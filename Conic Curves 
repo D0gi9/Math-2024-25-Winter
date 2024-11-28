@@ -1,0 +1,541 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN//sPl9msdHCMQ4xMMmdVX",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/D0gi9/Math-2024-25-Winter/blob/main/Conic%20Curves%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Conic Curves Overview**\n",
+        "\n",
+        "Conic curves, or conic sections, are the curves formed by the intersection of a plane with a double-napped cone. They are fundamental in geometry and can be classified into three main types based on the angle and position of the intersecting plane:\n",
+        "\n",
+        "**Circle**: Formed when the plane cuts the cone perpendicular to its axis. All points on the circle are equidistant from its center.\n",
+        "\n",
+        "\n",
+        "**Ellipse**: Occurs when the plane intersects the cone at an angle, but does not pass through the base. The sum of the distances from any point on the ellipse to its two foci is constant.\n",
+        "\n",
+        "\n",
+        "**Parabola**: Formed when the plane is parallel to the slant height of the cone. Every point on the parabola is equidistant from a fixed point (focus) and a fixed line (directrix).\n",
+        "\n",
+        "\n",
+        "**Hyperbola**: Occurs when the plane cuts through both nappes of the cone. The difference in distances from any point on the hyperbola to its two foci is constant.\n",
+        "\n",
+        "These curves have important applications in physics, engineering, and astronomy, such as in the paths of planets and satellite orbits.\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "e9UE_edC-sIR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Conic Curves Exercises**\n",
+        "\n",
+        "-Find the equation of a circle with center at point\n",
+        "A\n",
+        "(\n",
+        "1\n",
+        ",\n",
+        "2\n",
+        ")\n",
+        " and radius\n",
+        "r\n",
+        "=\n",
+        "3\n",
+        "."
+      ],
+      "metadata": {
+        "id": "h_2D4POE_lUi"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-Find the equation of a parabola intersecting the\n",
+        "O\n",
+        "x\n",
+        " axis at points\n",
+        "x\n",
+        "=\n",
+        "2\n",
+        ",\n",
+        "x\n",
+        "=\n",
+        "4\n",
+        ", and passing through point\n",
+        "y\n",
+        "(\n",
+        "3\n",
+        ")\n",
+        "=\n",
+        "1\n",
+        "."
+      ],
+      "metadata": {
+        "id": "3bMCT-tp_39V"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-Find the center of the ellipse with the equation x² + 4y² - 4x - 16y + 16 = 0"
+      ],
+      "metadata": {
+        "id": "QecBI82z_9uO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-Find the slope (m>0) of the line\n",
+        "y\n",
+        "=\n",
+        "m\n",
+        "x\n",
+        "−\n",
+        "5\n",
+        " that is tangent to the circle with the equation x² + y² = 1\n"
+      ],
+      "metadata": {
+        "id": "QbHWeBENABNc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-Find the intersection points of the hyperbola x² - y² = 1 with the ellipse's line x² + 4y² = 6\n"
+      ],
+      "metadata": {
+        "id": "bL74iMqUADwQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-For the given hyperbola x² - y²=1 find the distance between its branches."
+      ],
+      "metadata": {
+        "id": "AYDo0PEKAGcE"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**SOLUTIONS**\n",
+        "\n",
+        "-Find the equation of a circle with center at point\n",
+        "A\n",
+        "(\n",
+        "1\n",
+        ",\n",
+        "2\n",
+        ")\n",
+        " and radius\n",
+        "r\n",
+        "=\n",
+        "3\n",
+        ".\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "The equation of a circle with center $(h, k)$$(h, k)$ and radius $r$$r$ is given by:\n",
+        "\n",
+        "$(x - h)^2 + (y - k)^2 = r^2$$(x - h)^2 + (y - k)^2 = r^2$\n",
+        "\n",
+        "Here, the center of the circle is $A(1, 2)$$A(1, 2)$, so $h = 1$$h = 1$ and $k = 2$$k = 2$, and the radius $r = 3$$r = 3$. Substituting these values into the formula:\n",
+        "\n",
+        "$(x - 1)^2 + (y - 2)^2 = 3^2$$(x - 1)^2 + (y - 2)^2 = 3^2$\n",
+        "\n",
+        "Simplify:\n",
+        "\n",
+        "$(x - 1)^2 + (y - 2)^2 = 9$$(x - 1)^2 + (y - 2)^2 = 9$\n",
+        "\n",
+        "Thus, the equation of the circle is:\n",
+        "\n",
+        "$(x - 1)^2 + (y - 2)^2 = 9$$(x - 1)^2 + (y - 2)^2 = 9$"
+      ],
+      "metadata": {
+        "id": "wi51CTZ6ALMq"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-Find the equation of a parabola intersecting the\n",
+        "O\n",
+        "x\n",
+        " axis at points\n",
+        "x\n",
+        "=\n",
+        "2\n",
+        ",\n",
+        "x\n",
+        "=\n",
+        "4\n",
+        ", and passing through point\n",
+        "y\n",
+        "(\n",
+        "3\n",
+        ")\n",
+        "=\n",
+        "1\n",
+        "."
+      ],
+      "metadata": {
+        "id": "8O_FU7MAHhfX"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Step 1: General equation of the parabola**\n",
+        "\n",
+        "Since the parabola intersects the $x$$x$-axis at $x = 2$$x = 2$ and $x = 4$$x = 4$, these are its roots. Hence, the equation can be expressed as:\n",
+        "\n",
+        "$y = a(x - 2)(x - 4)$$y = a(x - 2)(x - 4)$\n",
+        "\n",
+        "Here, $a$$a$ is a constant to be determined.\n",
+        "\n",
+        "**Step 2: Use the given point** (3, 1)\n",
+        "\n",
+        "Substitute $x = 3$$x = 3$ and $y = 1$$y = 1$ into the equation to find $a$$a$:\n",
+        "\n",
+        "$1 = a(3 - 2)(3 - 4)$$1 = a(3 - 2)(3 - 4)$ $1 = a(1)(-1)$$1 = a(1)(-1)$ $a = -1$$a = -1$\n",
+        "\n",
+        "**Step 3: Final equation**\n",
+        "\n",
+        "Substitute $a = -1$$a = -1$ back into the equation:\n",
+        "\n",
+        "$y = -1(x - 2)(x - 4)$$y = -1(x - 2)(x - 4)$\n",
+        "\n",
+        "Simplify:\n",
+        "\n",
+        "$y = -(x^2 - 6x + 8)$$y = -(x^2 - 6x + 8)$ $y = -x^2 + 6x - 8$$y = -x^2 + 6x - 8$\n",
+        "\n",
+        "**Final Answer:**\n",
+        "\n",
+        "The equation of the parabola is:\n",
+        "\n",
+        "$y = -x^2 + 6x - 8$$y = -x^2 + 6x - 8$"
+      ],
+      "metadata": {
+        "id": "CnJ6tGHXH0-T"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Find the center of the ellipse with the equation x² + 4y² - 4x - 16y + 16 = 0\n"
+      ],
+      "metadata": {
+        "id": "RZkJT4VgIp2t"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Step 1**: Group x- and y-terms\n",
+        "\n",
+        "The given equation is: x² - 4x + 4y² - 16y + 16 = 0\n",
+        "\n",
+        "\n",
+        "**Step 2**: Complete the square\n",
+        "\n",
+        "**For x-terms**:\n",
+        "\n",
+        "We take the coefficient of x, which is -4.\n",
+        "Divide it by 2 and square the result:\n",
+        "\n",
+        " (-4/2)² = 4\n",
+        "Add and subtract this value (4) to complete the square for the x terms: x² - 4x = (x - 2)² - 4\n",
+        "\n",
+        "**For y-terms:**\n",
+        "\n",
+        "We take the coefficient of y, which is -16.\n",
+        "Divide it by 2 and square the result: (-16/2)² = 64\n",
+        "However, since we have a 4y² term, we need to add and subtract 64 multiplied by 4 to maintain the equation's balance:\n",
+        "\n",
+        "\n",
+        " 4y² - 16y = 4[(y - 2)² - 4] = 4(y - 2)² - 16"
+      ],
+      "metadata": {
+        "id": "2egQteFKJ8ce"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Step 3**: Substitute back\n",
+        "\n",
+        "Now, we take the expressions we found in Step 2 (the completed squares) and substitute them back into the original equation: (x - 2)² - 4 + 4(y - 2)² - 16 + 16 = 0\n",
+        "Simplify the equation by combining the constant terms: (x - 2)² + 4(y - 2)² - 4 = 0\n",
+        "Move the constant term (-4) to the right side of the equation to isolate the variables: (x - 2)² + 4(y - 2)² = 4\n",
+        "**Step 4**: Identify the center\n",
+        "\n",
+        "The equation is now in a standard form for an ellipse: (x - h)² / a² + (y - k)² / b² = 1 where (h, k) represents the center of the ellipse.\n",
+        "\n",
+        "To make our equation look exactly like the standard form, we can rewrite it as: (x - 2)² / 4 + (y - 2)² / 1 = 1\n",
+        "\n",
+        "By comparing our equation to the standard form, we can easily identify the center of the ellipse: The center is\n",
+        "\n",
+        " (h, k) = (2, 2)."
+      ],
+      "metadata": {
+        "id": "HtQnafu8LTxC"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-Find the slope (m>0) of the line\n",
+        "y\n",
+        "=\n",
+        "m\n",
+        "x\n",
+        "−\n",
+        "5\n",
+        " that is tangent to the circle with the equation x² + y² = 1"
+      ],
+      "metadata": {
+        "id": "GoAbWKepMdPO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Step 1**: Equation of the circle and the line\n",
+        "The equation of the circle is:\n",
+        "\n",
+        "x² + y² = 1\n",
+        "\n",
+        "The equation of the line is:\n",
+        "\n",
+        "y=mx−5\n",
+        "\n",
+        "**Step 2**: Substitute\n",
+        "𝑦\n",
+        "=\n",
+        "𝑚\n",
+        "𝑥\n",
+        "−\n",
+        "5\n",
+        "y=mx−5 into the circle equation\n",
+        "\n",
+        "Substitute\n",
+        "𝑦\n",
+        "=\n",
+        "𝑚\n",
+        "𝑥\n",
+        "−\n",
+        "5\n",
+        "y=mx−5 into x² + y² = 1:\n",
+        "\n",
+        "x² + (mx - 5)² = 1\n",
+        "\n",
+        "Expand the square:\n",
+        "\n",
+        "x² + (m²x² - 10mx + 25) = 1\n",
+        "\n",
+        "Combine like terms:\n",
+        "\n",
+        "x² + m²x²−10mx+25=1\n",
+        "(1 + m²)x²−10mx+24=0\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "v0TG9HmWMeUb"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Step 3**: Tangency condition\n",
+        "For the line to be tangent to the circle, the quadratic equation in\n",
+        "𝑥\n",
+        "x must have exactly one solution. This happens when the discriminant (\n",
+        "Δ\n",
+        ") is zero:\n",
+        "\n",
+        "Δ = b² - 4ac\n",
+        "\n",
+        "Here, the quadratic equation is:\n",
+        "\n",
+        "(1 + m²)x²−10mx+24=0\n",
+        "\n",
+        "\n",
+        "a=1+m²\n",
+        "\n",
+        "b=−10m\n",
+        "\n",
+        "c=24\n",
+        "\n",
+        "\n",
+        "Δ = (-10m)² - 4(1 + m²)(24)\n",
+        "\n",
+        "Δ = 100m² - 96(1 + m²)\n",
+        "\n",
+        "Simplify:\n",
+        "\n",
+        "Δ = 100m² - 96 - 96m²\n",
+        "\n",
+        "Δ = 4m² - 96\n",
+        "\n",
+        "Set\n",
+        "Δ\n",
+        "=\n",
+        "0 for tangency:\n",
+        "\n",
+        "4m² - 96 = 0\n",
+        "\n",
+        "Solve for m²:\n",
+        "\n",
+        "4m² = 96\n",
+        "\n",
+        "m² = 24\n",
+        "\n",
+        "\n",
+        "m = √24 = 2√6 (since m>0)\n",
+        "\n",
+        "Final Answer:\n",
+        "The positive slope is:\n",
+        "\n",
+        "m=2√6\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "0-1j_7oZOm2h"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-Find the intersection points of the hyperbola x² - y² = 1 with the ellipse's line x² + 4y² = 6\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "zsvAb7WMRdRS"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "System of Equations\n",
+        "\n",
+        "We have the following system of equations:\n",
+        "\n",
+        "Hyperbola: x² - y² = 1 (Equation 1)\n",
+        "\n",
+        "Ellipse: x² + 4y² = 6 (Equation 2)\n",
+        "\n",
+        "\n",
+        "2. Solving for x²\n",
+        "\n",
+        "We can solve for x² in Equation 1:\n",
+        "\n",
+        "x² = y² + 1\n",
+        "\n",
+        "3. Substitution\n",
+        "\n",
+        "Substitute this expression for x² into Equation 2:\n",
+        "\n",
+        "(y² + 1) + 4y² = 6\n",
+        "\n",
+        "4. Solving for y\n",
+        "\n",
+        "Simplify and solve for y:\n",
+        "\n",
+        "5y² + 1 = 6 5y² = 5 y² = 1 y = ±1\n",
+        "\n",
+        "\n",
+        "5. Solving for x\n",
+        "\n",
+        "Substitute the values of y back into the equation x² = y² + 1 to find the corresponding x values:\n",
+        "\n",
+        "When y = 1: x² = 1² + 1 = 2 x = ±√2\n",
+        "\n",
+        "When y = -1: x² = (-1)² + 1 = 2 x = ±√2\n",
+        "\n",
+        "6. Intersection Points\n",
+        "\n",
+        "Therefore, the intersection points are:\n",
+        "\n",
+        "(√2, 1), (-√2, 1), (√2, -1), (-√2, -1)\n",
+        "\n",
+        "In summary, the hyperbola x² - y² = 1 and the ellipse x² + 4y² = 6 intersect at the four points (√2, 1), (-√2, 1), (√2, -1), and (-√2, -1)."
+      ],
+      "metadata": {
+        "id": "cFjJafARkWVO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-For the given hyperbola x² - y²=1 find the distance between its branches.\n",
+        "\n",
+        "1. Standard Form\n",
+        "\n",
+        "The given equation is already in the standard form for a hyperbola centered at the origin:\n",
+        "\n",
+        "x²/a² - y²/b² = 1\n",
+        "\n",
+        "Comparing this to our equation, we have: a² = 1 => a = 1 b² = 1 => b = 1\n",
+        "\n",
+        "2. Understanding Hyperbola Branches\n",
+        "\n",
+        "A hyperbola has two branches that open either horizontally or vertically. Since the x² term is positive in our equation, this hyperbola opens horizontally.\n",
+        "\n",
+        "3. Vertices\n",
+        "\n",
+        "The vertices of a hyperbola are located at (±a, 0). In our case, the vertices are at (±1, 0).\n",
+        "\n",
+        "4. Distance between Branches\n",
+        "\n",
+        "The distance between the branches of a hyperbola is the distance between its vertices. Since the vertices are at (±1, 0), the distance between them is:\n",
+        "\n",
+        "Distance = 2a = 2(1) = 2\n",
+        "\n",
+        "Therefore, the distance between the branches of the hyperbola x² - y² = 1 is 2.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "4uTgOoizlWhP"
+      }
+    }
+  ]
+}
